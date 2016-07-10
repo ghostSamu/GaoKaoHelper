@@ -1,0 +1,2 @@
+/Users/Phantom/Library/Developer/Xcode/DerivedData/GaoKaoHelper-gzfdrldkfbkiwhgvubbewqzqvvfj/Build/Products/Debug-iphonesimulator/GaoKaoHelper.app
+

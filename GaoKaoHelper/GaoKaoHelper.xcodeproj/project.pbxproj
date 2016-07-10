@@ -1,0 +1,661 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		470ABF281D3154E3004C6D19 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 470ABF271D3154E3004C6D19 /* HomeViewController.m */; };
+		470ABF2B1D3154F0004C6D19 /* MyCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 470ABF2A1D3154F0004C6D19 /* MyCenterViewController.m */; };
+		470ABF2E1D315635004C6D19 /* CustomTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 470ABF2D1D315635004C6D19 /* CustomTabBarViewController.m */; };
+		4752F0681D2FF504007EB411 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4752F0671D2FF504007EB411 /* main.m */; };
+		4752F06B1D2FF504007EB411 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4752F06A1D2FF504007EB411 /* AppDelegate.m */; };
+		4752F06E1D2FF504007EB411 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4752F06D1D2FF504007EB411 /* ViewController.m */; };
+		4752F0711D2FF504007EB411 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4752F06F1D2FF504007EB411 /* Main.storyboard */; };
+		4752F0731D2FF504007EB411 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4752F0721D2FF504007EB411 /* Assets.xcassets */; };
+		4752F0761D2FF504007EB411 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4752F0741D2FF504007EB411 /* LaunchScreen.storyboard */; };
+		4752F0811D2FF504007EB411 /* GaoKaoHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4752F0801D2FF504007EB411 /* GaoKaoHelperTests.m */; };
+		4752F08C1D2FF504007EB411 /* GaoKaoHelperUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4752F08B1D2FF504007EB411 /* GaoKaoHelperUITests.m */; };
+		47CB15CA1D32834D003FD51C /* HomeMiddleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CB15C91D32834D003FD51C /* HomeMiddleView.m */; };
+		47CB15CD1D329F36003FD51C /* HomeBottomTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CB15CC1D329F36003FD51C /* HomeBottomTableView.m */; };
+		B1EACA517096F53270DFD0DE /* libPods-GaoKaoHelper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B19053FF81C6C2CD5E7A024C /* libPods-GaoKaoHelper.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4752F07D1D2FF504007EB411 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4752F05B1D2FF504007EB411 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4752F0621D2FF504007EB411;
+			remoteInfo = GaoKaoHelper;
+		};
+		4752F0881D2FF504007EB411 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4752F05B1D2FF504007EB411 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4752F0621D2FF504007EB411;
+			remoteInfo = GaoKaoHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		25821660F62C290636BB09C1 /* Pods-GaoKaoHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GaoKaoHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-GaoKaoHelper/Pods-GaoKaoHelper.release.xcconfig"; sourceTree = "<group>"; };
+		470ABF261D3154E3004C6D19 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		470ABF271D3154E3004C6D19 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		470ABF291D3154F0004C6D19 /* MyCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCenterViewController.h; sourceTree = "<group>"; };
+		470ABF2A1D3154F0004C6D19 /* MyCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCenterViewController.m; sourceTree = "<group>"; };
+		470ABF2C1D315635004C6D19 /* CustomTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarViewController.h; sourceTree = "<group>"; };
+		470ABF2D1D315635004C6D19 /* CustomTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarViewController.m; sourceTree = "<group>"; };
+		4752F0631D2FF504007EB411 /* GaoKaoHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GaoKaoHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4752F0671D2FF504007EB411 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4752F0691D2FF504007EB411 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4752F06A1D2FF504007EB411 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4752F06C1D2FF504007EB411 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4752F06D1D2FF504007EB411 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4752F0701D2FF504007EB411 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4752F0721D2FF504007EB411 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4752F0751D2FF504007EB411 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4752F0771D2FF504007EB411 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4752F07C1D2FF504007EB411 /* GaoKaoHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GaoKaoHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4752F0801D2FF504007EB411 /* GaoKaoHelperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GaoKaoHelperTests.m; sourceTree = "<group>"; };
+		4752F0821D2FF504007EB411 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4752F0871D2FF504007EB411 /* GaoKaoHelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GaoKaoHelperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4752F08B1D2FF504007EB411 /* GaoKaoHelperUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GaoKaoHelperUITests.m; sourceTree = "<group>"; };
+		4752F08D1D2FF504007EB411 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47CB15C81D32834D003FD51C /* HomeMiddleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeMiddleView.h; sourceTree = "<group>"; };
+		47CB15C91D32834D003FD51C /* HomeMiddleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeMiddleView.m; sourceTree = "<group>"; };
+		47CB15CB1D329F36003FD51C /* HomeBottomTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeBottomTableView.h; sourceTree = "<group>"; };
+		47CB15CC1D329F36003FD51C /* HomeBottomTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeBottomTableView.m; sourceTree = "<group>"; };
+		AF29EE7E155A18DD05CA81FB /* Pods-GaoKaoHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GaoKaoHelper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GaoKaoHelper/Pods-GaoKaoHelper.debug.xcconfig"; sourceTree = "<group>"; };
+		B19053FF81C6C2CD5E7A024C /* libPods-GaoKaoHelper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GaoKaoHelper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4752F0601D2FF504007EB411 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1EACA517096F53270DFD0DE /* libPods-GaoKaoHelper.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4752F0791D2FF504007EB411 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4752F0841D2FF504007EB411 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		470ABF241D3154C7004C6D19 /* MyCenter */ = {
+			isa = PBXGroup;
+			children = (
+				470ABF291D3154F0004C6D19 /* MyCenterViewController.h */,
+				470ABF2A1D3154F0004C6D19 /* MyCenterViewController.m */,
+			);
+			path = MyCenter;
+			sourceTree = "<group>";
+		};
+		470ABF251D3154CD004C6D19 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				47CB15C71D3282F9003FD51C /* View */,
+				470ABF261D3154E3004C6D19 /* HomeViewController.h */,
+				470ABF271D3154E3004C6D19 /* HomeViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4752F05A1D2FF504007EB411 = {
+			isa = PBXGroup;
+			children = (
+				4752F0651D2FF504007EB411 /* GaoKaoHelper */,
+				4752F07F1D2FF504007EB411 /* GaoKaoHelperTests */,
+				4752F08A1D2FF504007EB411 /* GaoKaoHelperUITests */,
+				4752F0641D2FF504007EB411 /* Products */,
+				9E70279F744F80DE305DED1A /* Pods */,
+				9C2DD972CD6132B5E3C5BF83 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4752F0641D2FF504007EB411 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4752F0631D2FF504007EB411 /* GaoKaoHelper.app */,
+				4752F07C1D2FF504007EB411 /* GaoKaoHelperTests.xctest */,
+				4752F0871D2FF504007EB411 /* GaoKaoHelperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4752F0651D2FF504007EB411 /* GaoKaoHelper */ = {
+			isa = PBXGroup;
+			children = (
+				470ABF251D3154CD004C6D19 /* Home */,
+				470ABF241D3154C7004C6D19 /* MyCenter */,
+				4752F0691D2FF504007EB411 /* AppDelegate.h */,
+				4752F06A1D2FF504007EB411 /* AppDelegate.m */,
+				470ABF2C1D315635004C6D19 /* CustomTabBarViewController.h */,
+				470ABF2D1D315635004C6D19 /* CustomTabBarViewController.m */,
+				4752F06C1D2FF504007EB411 /* ViewController.h */,
+				4752F06D1D2FF504007EB411 /* ViewController.m */,
+				4752F06F1D2FF504007EB411 /* Main.storyboard */,
+				4752F0721D2FF504007EB411 /* Assets.xcassets */,
+				4752F0741D2FF504007EB411 /* LaunchScreen.storyboard */,
+				4752F0771D2FF504007EB411 /* Info.plist */,
+				4752F0661D2FF504007EB411 /* Supporting Files */,
+			);
+			path = GaoKaoHelper;
+			sourceTree = "<group>";
+		};
+		4752F0661D2FF504007EB411 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4752F0671D2FF504007EB411 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4752F07F1D2FF504007EB411 /* GaoKaoHelperTests */ = {
+			isa = PBXGroup;
+			children = (
+				4752F0801D2FF504007EB411 /* GaoKaoHelperTests.m */,
+				4752F0821D2FF504007EB411 /* Info.plist */,
+			);
+			path = GaoKaoHelperTests;
+			sourceTree = "<group>";
+		};
+		4752F08A1D2FF504007EB411 /* GaoKaoHelperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4752F08B1D2FF504007EB411 /* GaoKaoHelperUITests.m */,
+				4752F08D1D2FF504007EB411 /* Info.plist */,
+			);
+			path = GaoKaoHelperUITests;
+			sourceTree = "<group>";
+		};
+		47CB15C71D3282F9003FD51C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				47CB15C81D32834D003FD51C /* HomeMiddleView.h */,
+				47CB15C91D32834D003FD51C /* HomeMiddleView.m */,
+				47CB15CB1D329F36003FD51C /* HomeBottomTableView.h */,
+				47CB15CC1D329F36003FD51C /* HomeBottomTableView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9C2DD972CD6132B5E3C5BF83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B19053FF81C6C2CD5E7A024C /* libPods-GaoKaoHelper.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E70279F744F80DE305DED1A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF29EE7E155A18DD05CA81FB /* Pods-GaoKaoHelper.debug.xcconfig */,
+				25821660F62C290636BB09C1 /* Pods-GaoKaoHelper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4752F0621D2FF504007EB411 /* GaoKaoHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4752F0901D2FF504007EB411 /* Build configuration list for PBXNativeTarget "GaoKaoHelper" */;
+			buildPhases = (
+				E10C3CB8486C6DA3D2540157 /* [CP] Check Pods Manifest.lock */,
+				4752F05F1D2FF504007EB411 /* Sources */,
+				4752F0601D2FF504007EB411 /* Frameworks */,
+				4752F0611D2FF504007EB411 /* Resources */,
+				2BC4E2EF4CD6A0DD8E11F3BA /* [CP] Embed Pods Frameworks */,
+				AD1FF8E9308C4E5ED20B3EDB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GaoKaoHelper;
+			productName = GaoKaoHelper;
+			productReference = 4752F0631D2FF504007EB411 /* GaoKaoHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4752F07B1D2FF504007EB411 /* GaoKaoHelperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4752F0931D2FF504007EB411 /* Build configuration list for PBXNativeTarget "GaoKaoHelperTests" */;
+			buildPhases = (
+				4752F0781D2FF504007EB411 /* Sources */,
+				4752F0791D2FF504007EB411 /* Frameworks */,
+				4752F07A1D2FF504007EB411 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4752F07E1D2FF504007EB411 /* PBXTargetDependency */,
+			);
+			name = GaoKaoHelperTests;
+			productName = GaoKaoHelperTests;
+			productReference = 4752F07C1D2FF504007EB411 /* GaoKaoHelperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4752F0861D2FF504007EB411 /* GaoKaoHelperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4752F0961D2FF504007EB411 /* Build configuration list for PBXNativeTarget "GaoKaoHelperUITests" */;
+			buildPhases = (
+				4752F0831D2FF504007EB411 /* Sources */,
+				4752F0841D2FF504007EB411 /* Frameworks */,
+				4752F0851D2FF504007EB411 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4752F0891D2FF504007EB411 /* PBXTargetDependency */,
+			);
+			name = GaoKaoHelperUITests;
+			productName = GaoKaoHelperUITests;
+			productReference = 4752F0871D2FF504007EB411 /* GaoKaoHelperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4752F05B1D2FF504007EB411 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = YANGLEILEI;
+				TargetAttributes = {
+					4752F0621D2FF504007EB411 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					4752F07B1D2FF504007EB411 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 4752F0621D2FF504007EB411;
+					};
+					4752F0861D2FF504007EB411 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 4752F0621D2FF504007EB411;
+					};
+				};
+			};
+			buildConfigurationList = 4752F05E1D2FF504007EB411 /* Build configuration list for PBXProject "GaoKaoHelper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4752F05A1D2FF504007EB411;
+			productRefGroup = 4752F0641D2FF504007EB411 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4752F0621D2FF504007EB411 /* GaoKaoHelper */,
+				4752F07B1D2FF504007EB411 /* GaoKaoHelperTests */,
+				4752F0861D2FF504007EB411 /* GaoKaoHelperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4752F0611D2FF504007EB411 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4752F0761D2FF504007EB411 /* LaunchScreen.storyboard in Resources */,
+				4752F0731D2FF504007EB411 /* Assets.xcassets in Resources */,
+				4752F0711D2FF504007EB411 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4752F07A1D2FF504007EB411 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4752F0851D2FF504007EB411 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2BC4E2EF4CD6A0DD8E11F3BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GaoKaoHelper/Pods-GaoKaoHelper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD1FF8E9308C4E5ED20B3EDB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GaoKaoHelper/Pods-GaoKaoHelper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E10C3CB8486C6DA3D2540157 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4752F05F1D2FF504007EB411 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4752F06E1D2FF504007EB411 /* ViewController.m in Sources */,
+				47CB15CD1D329F36003FD51C /* HomeBottomTableView.m in Sources */,
+				470ABF2E1D315635004C6D19 /* CustomTabBarViewController.m in Sources */,
+				470ABF2B1D3154F0004C6D19 /* MyCenterViewController.m in Sources */,
+				47CB15CA1D32834D003FD51C /* HomeMiddleView.m in Sources */,
+				4752F06B1D2FF504007EB411 /* AppDelegate.m in Sources */,
+				4752F0681D2FF504007EB411 /* main.m in Sources */,
+				470ABF281D3154E3004C6D19 /* HomeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4752F0781D2FF504007EB411 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4752F0811D2FF504007EB411 /* GaoKaoHelperTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4752F0831D2FF504007EB411 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4752F08C1D2FF504007EB411 /* GaoKaoHelperUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4752F07E1D2FF504007EB411 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4752F0621D2FF504007EB411 /* GaoKaoHelper */;
+			targetProxy = 4752F07D1D2FF504007EB411 /* PBXContainerItemProxy */;
+		};
+		4752F0891D2FF504007EB411 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4752F0621D2FF504007EB411 /* GaoKaoHelper */;
+			targetProxy = 4752F0881D2FF504007EB411 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4752F06F1D2FF504007EB411 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4752F0701D2FF504007EB411 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4752F0741D2FF504007EB411 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4752F0751D2FF504007EB411 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4752F08E1D2FF504007EB411 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4752F08F1D2FF504007EB411 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4752F0911D2FF504007EB411 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF29EE7E155A18DD05CA81FB /* Pods-GaoKaoHelper.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = GaoKaoHelper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "NO-1.GaoKaoHelper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4752F0921D2FF504007EB411 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25821660F62C290636BB09C1 /* Pods-GaoKaoHelper.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GaoKaoHelper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "NO-1.GaoKaoHelper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4752F0941D2FF504007EB411 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = GaoKaoHelperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "NO-1.GaoKaoHelperTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GaoKaoHelper.app/GaoKaoHelper";
+			};
+			name = Debug;
+		};
+		4752F0951D2FF504007EB411 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GaoKaoHelperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "NO-1.GaoKaoHelperTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GaoKaoHelper.app/GaoKaoHelper";
+			};
+			name = Release;
+		};
+		4752F0971D2FF504007EB411 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = GaoKaoHelperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "NO-1.GaoKaoHelperUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GaoKaoHelper;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		4752F0981D2FF504007EB411 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GaoKaoHelperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "NO-1.GaoKaoHelperUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GaoKaoHelper;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4752F05E1D2FF504007EB411 /* Build configuration list for PBXProject "GaoKaoHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4752F08E1D2FF504007EB411 /* Debug */,
+				4752F08F1D2FF504007EB411 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4752F0901D2FF504007EB411 /* Build configuration list for PBXNativeTarget "GaoKaoHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4752F0911D2FF504007EB411 /* Debug */,
+				4752F0921D2FF504007EB411 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4752F0931D2FF504007EB411 /* Build configuration list for PBXNativeTarget "GaoKaoHelperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4752F0941D2FF504007EB411 /* Debug */,
+				4752F0951D2FF504007EB411 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4752F0961D2FF504007EB411 /* Build configuration list for PBXNativeTarget "GaoKaoHelperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4752F0971D2FF504007EB411 /* Debug */,
+				4752F0981D2FF504007EB411 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4752F05B1D2FF504007EB411 /* Project object */;
+}

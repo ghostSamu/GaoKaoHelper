@@ -10,13 +10,22 @@
 #import "HomeMiddleView.h"
 #import "HomeBottomTableView.h"
 #import "HomeViewController.h"
+#import "HomeTableSecionHeaderView.h"
+#import "HomeTableViewCell.h"
 
 #define WIDTH (self.view.frame.size.width)
+
 #define HEIGHT (self.view.frame.size.height)
 
-@interface HomeViewController ()
+static NSString *headerIndentfier = @"sectionHeader";
 
-@property (nonatomic, strong) HomeMiddleView *topView;
+static NSString *footerIndentfier = @"sectionFooter";
+
+static NSString *cellIndentfier = @"HomeTableViewCell";
+
+@interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
+
+@property (nonatomic, strong) HomeMiddleView *middleButtonsView;
 
 @property (nonatomic, strong) HomeBottomTableView *bottomTableView;
 
@@ -25,19 +34,89 @@
 @implementation HomeViewController
 
 - (void)viewDidLoad {
+
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 
-    self.view.backgroundColor = [UIColor whiteColor];
-
-    [self.view addSubview:self.topView];
-
-    UIView *one= [[UIView alloc] initWithFrame:CGRectMake(0, 300, 50, 50)];
-
-    one.backgroundColor = [UIColor greenColor];
-
-    [self.view addSubview:one];
+    [self addBottomTableView];
 }
+
+#pragma mark TableView Delegate
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+
+     HomeTableSecionHeaderView *headerView = (HomeTableSecionHeaderView *)[tableView dequeueReusableHeaderFooterViewWithIdentifier:headerIndentfier];
+
+    if (!headerView) {
+
+        headerView = [[HomeTableSecionHeaderView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, 44)];
+    }
+    return headerView;
+}
+
+ //去掉UItableview headerview黏性(sticky)
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    CGFloat sectionHeaderHeight = 44;
+    if (scrollView.contentOffset.y<=sectionHeaderHeight&&scrollView.contentOffset.y>=0) {
+        scrollView.contentInset = UIEdgeInsetsMake(-scrollView.contentOffset.y, 0, 0, 0);
+    }
+    else if (scrollView.contentOffset.y>=sectionHeaderHeight) {
+        scrollView.contentInset = UIEdgeInsetsMake(-sectionHeaderHeight, 0, 0, 0);
+    }
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+
+    return 10;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    HomeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIndentfier];
+
+    if (!cell) {
+
+        cell = [[HomeTableViewCell alloc] init];
+
+    }
+
+    return cell;
+}
+
+#pragma mark UI
+
+- (void)addBottomTableView{
+
+    if (self.bottomTableView) {
+        return;
+    }
+
+    self.bottomTableView = [[HomeBottomTableView alloc] init];
+
+    self.bottomTableView.backgroundColor = [UIColor whiteColor];
+
+    [self.view addSubview:self.bottomTableView];
+
+    [self.bottomTableView mas_makeConstraints:^(MASConstraintMaker *make) {
+
+        make.edges.equalTo(self.view).with.insets(UIEdgeInsetsMake(0, 0, 40, 0));
+    }];
+
+    self.bottomTableView.delegate = self;
+
+    self.bottomTableView.dataSource = self;
+
+    [self.bottomTableView setSectionHeaderHeight:44];
+
+    [self.bottomTableView setRowHeight:100];
+}
+
+//刷新UI
+-(void)injected{
+
+    [self viewDidLoad];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -45,57 +124,14 @@
 }
 
 /*
-#pragma mark - Navigation
+ #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
-#pragma mark lazy-load
-
-- (HomeMiddleView *)topView{
-
-    if (!_topView) {
-
-        _topView = [[HomeMiddleView alloc] init];
-
-        [self.view addSubview:_topView];
-
-        [_topView mas_makeConstraints:^(MASConstraintMaker *make) {
-
-            make.left.equalTo(self.view).with.offset(0);
-
-            make.top.equalTo(self.view).with.offset(20);
-
-            make.size.mas_equalTo(CGSizeMake(WIDTH,HEIGHT / 3));
-
-            [_topView setNeedsLayout];
-        }];
-    }
-    return _topView;
-}
-
-- (HomeBottomTableView *)bottomTableView{
-
-    if (!_bottomTableView) {
-
-        _bottomTableView = [[HomeBottomTableView alloc] init];
-
-        [self.view addSubview:_bottomTableView];
-
-        [_bottomTableView mas_makeConstraints:^(MASConstraintMaker *make) {
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 
-        }];
-    }
-    return _bottomTableView;
-}
-
-//刷新UI
--(void)injected{
-    [self viewDidLoad];
-}
 @end

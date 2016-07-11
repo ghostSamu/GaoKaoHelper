@@ -17,6 +17,12 @@
 
 static NSInteger buttonsCount = 4;
 
+@interface HomeMiddleView ()
+
+@property (nonatomic ,assign) BOOL isCreated;
+
+@end
+
 @implementation HomeMiddleView
 
 - (instancetype)init{
@@ -28,9 +34,14 @@ static NSInteger buttonsCount = 4;
     return self;
 }
 
+
 - (void)layoutSubviews{
 
     [super layoutSubviews];
+
+    if (self.isCreated) {
+        return;
+    }
 
     [self addButtons];
 }
@@ -112,7 +123,11 @@ static NSInteger buttonsCount = 4;
             }
         }];
     }
+
+    self.isCreated = YES;
 }
+
+
 
 /*
  // Only override drawRect: if you perform custom drawing.

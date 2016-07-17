@@ -8,18 +8,11 @@
 
 #import "HomeMiddleView.h"
 #import <Masonry.h>
-
-#define WIDTH (self.frame.size.width)
-
-#define HEIGHT (self.frame.size.height)
-
-#define BUTTONSIZE (CGSizeMake((WIDTH - 3 * padding) / 2, (HEIGHT - 3 * padding) / 2))
+#import "ColorTool.h"
 
 static NSInteger buttonsCount = 4;
 
 @interface HomeMiddleView ()
-
-@property (nonatomic ,assign) BOOL isCreated;
 
 @end
 
@@ -30,20 +23,10 @@ static NSInteger buttonsCount = 4;
     if (self = [super init]) {
 
         self.backgroundColor = [UIColor grayColor];
+
+        [self addButtons];
     }
     return self;
-}
-
-
-- (void)layoutSubviews{
-
-    [super layoutSubviews];
-
-    if (self.isCreated) {
-        return;
-    }
-
-    [self addButtons];
 }
 
 - (void)addButtons{
@@ -52,79 +35,76 @@ static NSInteger buttonsCount = 4;
 
         UIButton *button = [[UIButton alloc] init];
 
+        button.backgroundColor = [ColorTool randomColor];
+
         [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
 
         [self addSubview:button];
-
-        //间隙
-        CGFloat padding = 5;
 
         [button mas_makeConstraints:^(MASConstraintMaker *make) {
 
             switch (i) {
                 case 0:
 
-                    make.top.equalTo(self).offset(padding);
+                    make.top.equalTo(self).offset(0);
 
-                    make.right.equalTo(self.mas_centerX).offset(-padding / 2);
+                    make.right.equalTo(self.mas_centerX).offset(0);
 
-                    make.size.mas_equalTo(BUTTONSIZE);
+                    make.width.equalTo(self.mas_width).multipliedBy(0.5);
+
+                    make.height.equalTo(self.mas_height).multipliedBy(0.5);
 
                     button.tag = searchType;
 
                     [button setTitle:@"高考查分" forState:UIControlStateNormal];
-
-                    button.backgroundColor = [UIColor orangeColor];
                     break;
                 case 1:
 
-                    make.top.equalTo(self).offset(padding);
+                    make.top.equalTo(self).offset(0);
 
-                    make.left.equalTo(self.mas_centerX).offset(padding / 2);
+                    make.left.equalTo(self.mas_centerX).offset(0);
 
-                    make.size.mas_equalTo(BUTTONSIZE);
+                    make.width.equalTo(self.mas_width).multipliedBy(0.5);
+
+                    make.height.equalTo(self.mas_height).multipliedBy(0.5);
 
                     button.tag = selectType;
 
                     [button setTitle:@"选择学校或专业" forState:UIControlStateNormal];
-
-                    button.backgroundColor = [UIColor blueColor];
                     break;
                 case 2:
 
-                    make.bottom.equalTo(self).offset(-padding);
+                    make.bottom.equalTo(self).offset(0);
 
-                    make.right.equalTo(self.mas_centerX).offset(-padding / 2);
+                    make.right.equalTo(self.mas_centerX).offset(0);
 
-                    make.size.mas_equalTo(BUTTONSIZE);
+                    make.width.equalTo(self.mas_width).multipliedBy(0.5);
+
+                    make.height.equalTo(self.mas_height).multipliedBy(0.5);
 
                     button.tag = testType;
 
                     [button setTitle:@"性格测试" forState:UIControlStateNormal];
-
-                    button.backgroundColor = [UIColor redColor];
                     break;
                 case 3:
 
-                    make.bottom.equalTo(self).offset(-padding);
+                    make.bottom.equalTo(self).offset(0);
 
-                    make.left.equalTo(self.mas_centerX).offset(padding / 2);
+                    make.left.equalTo(self.mas_centerX).offset(0);
 
-                    make.size.mas_equalTo(BUTTONSIZE);
+                    make.width.equalTo(self.mas_width).multipliedBy(0.5);
+
+                    make.height.equalTo(self.mas_height).multipliedBy(0.5);
 
                     button.tag = simulatorType;
 
                     [button setTitle:@"模拟填报" forState:UIControlStateNormal];
-
-                    button.backgroundColor = [UIColor whiteColor];
                     break;
                 default:
                     break;
             }
         }];
     }
-
-    self.isCreated = YES;
 }
 
 

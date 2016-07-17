@@ -27,7 +27,6 @@
 }
 
 - (void)addSubviews{
-
     //图片
     UIImageView *newsImageView = [UIImageView new];
 
@@ -65,6 +64,8 @@
     //内容
     UITextView *contentText = [UITextView new];
 
+    contentText.editable = NO;
+
     contentText.backgroundColor = [UIColor blackColor];
 
     [self addSubview:contentText];
@@ -82,9 +83,7 @@
 }
 
 - (void)awakeFromNib {
-    // Initialization code
-
-    
+    // Initialization code    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
